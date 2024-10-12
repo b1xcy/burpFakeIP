@@ -27,7 +27,7 @@ public class Utils {
         List<String> headers = requestInfo.getHeaders();
 
         //去除header中本身已经有的字段
-        List<String> templist = Config.HEADER_LIST;
+        List<String> templist = Config.IP_HEADER_LIST;
         for (String header : headers) {
             String hkey = header.split(":")[0];
             templist = templist.stream().filter(key -> !key.equals(hkey)).collect(Collectors.toList());

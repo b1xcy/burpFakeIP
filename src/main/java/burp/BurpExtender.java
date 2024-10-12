@@ -18,8 +18,8 @@ import java.util.List;
  */
 public class BurpExtender implements IBurpExtender, IContextMenuFactory, IIntruderPayloadGeneratorFactory, IIntruderPayloadGenerator, IHttpListener {
     public static IExtensionHelpers helpers;
-    private String PLUGIN_NAME = "burpFakeIP";
-    private String VERSION = "1.1";
+    private String PLUGIN_NAME = "burpFakeIP_b1xcy";
+    private String VERSION = "1.2";
     public static PrintWriter stdout;
 
     @Override
@@ -29,9 +29,10 @@ public class BurpExtender implements IBurpExtender, IContextMenuFactory, IIntrud
         stdout = new PrintWriter(callbacks.getStdout(), true);
         String banner = "[+] %s %s is loaded...\n" +
                 "[+] ####################################\n" +
-                "[+]    Anthor: CoolCat\n" +
-                "[+]    Blog:   https://blog.thekingofduck.com/\n" +
-                "[+]    Github: https://github.com/TheKingOfDuck\n" +
+                "[+]    Anthor: b1xcy\n" +
+                "[+]    Blog:   https://www.b1xcy.top/\n" +
+                "[+]    GitHub: https://github.com/b1xcy\n" +
+                "[+]    fork by: https://github.com/TheKingOfDuck\n" +
                 "[+] ####################################\n" +
                 "[+] Enjoy it~";
         stdout.println(String.format(banner, PLUGIN_NAME, VERSION));
